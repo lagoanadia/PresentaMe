@@ -59,6 +59,16 @@ h2{font-size:13px;font-weight:500;color:var(--muted);margin:28px 0 8px}
 .projects img{width:32px;height:32px;border-radius:8px;flex:none}
 .projects strong{display:block;font-weight:600;font-size:16px}
 .projects small{display:block;color:var(--muted);font-size:13.5px}
+.projects li:has(.clients)>a{border-bottom:0}
+.clients{list-style:none;position:relative;margin-left:16px;padding-left:29px;padding-bottom:6px}
+.projects li:has(.clients){border-bottom:1px solid var(--line)}
+.clients::before{content:"";position:absolute;left:0;top:-8px;bottom:32px;width:1.5px;background:var(--line);border-radius:1px}
+.clients li{position:relative}
+.clients li::before{content:"";position:absolute;left:-29px;top:50%;width:20px;height:1.5px;background:var(--line)}
+.clients a{min-height:52px;border-bottom:0;gap:11px}
+.clients img{width:26px;height:26px;border-radius:7px}
+.clients strong{font-size:15px;font-weight:500}
+.clients small{font-size:13px}
 .projects .ch{width:7px;height:12px;margin-left:auto;color:var(--muted)}
 
 footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13.5px}
@@ -112,14 +122,17 @@ footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13.5px}
         <img src="img/synaptic.png" alt="" width="32" height="32"><div><strong>Synaptic</strong><small data-i18n="p1">Apuntes y repasos con IA</small></div>
         <svg class="ch" viewBox="0 0 8 14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M1 1l6 6-6 6"/></svg></a></li>
       <li><a href="https://lagoa-webs.vercel.app" target="_blank" rel="noopener">
-        <img src="img/lagoa.svg" alt="" width="32" height="32"><div><strong>Lagoa · Estudio digital</strong><small data-i18n="p2">Freelance · 3 clientes reales</small></div>
+        <img src="img/lagoa.svg" alt="" width="32" height="32"><div><strong>Lagoa · Estudio digital</strong><small data-i18n="p2">Freelance · webs para clientes reales</small></div>
+        <svg class="ch" viewBox="0 0 8 14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M1 1l6 6-6 6"/></svg></a>
+        <ul class="clients" aria-label="Clientes de Lagoa" data-i18n-aria="clients">
+          <li><a href="https://asesoria-fiscal.lagoanadia.workers.dev/" target="_blank" rel="noopener">
+        <img src="img/asesoria.svg" alt="" width="32" height="32"><div><strong data-i18n="p3t">Asesoría fiscal</strong><small data-i18n="p3">Web en curso</small></div>
         <svg class="ch" viewBox="0 0 8 14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M1 1l6 6-6 6"/></svg></a></li>
-      <li><a href="https://asesoria-fiscal.lagoanadia.workers.dev/" target="_blank" rel="noopener">
-        <img src="img/asesoria.svg" alt="" width="32" height="32"><div><strong data-i18n="p3t">Asesoría fiscal</strong><small data-i18n="p3">Cliente real · en curso</small></div>
+          <li><a href="https://yutori.lagoanadia.workers.dev/" target="_blank" rel="noopener">
+        <img src="img/yutori.svg" alt="" width="32" height="32"><div><strong data-i18n="p4t">Yutori · Espacio creativo</strong><small data-i18n="p4">Talleres creativos · web en curso</small></div>
         <svg class="ch" viewBox="0 0 8 14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M1 1l6 6-6 6"/></svg></a></li>
-      <li><a href="https://yutori.lagoanadia.workers.dev/" target="_blank" rel="noopener">
-        <img src="img/yutori.svg" alt="" width="32" height="32"><div><strong data-i18n="p4t">Yutori · Espacio creativo</strong><small data-i18n="p4">Talleres creativos · en curso</small></div>
-        <svg class="ch" viewBox="0 0 8 14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M1 1l6 6-6 6"/></svg></a></li>
+        </ul></li>
+
     </ul>
   </section>
 
@@ -128,8 +141,8 @@ footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13.5px}
 <script>
 (function(){
   var T={
-    es:{title:"Nadia Lagoa Vilela · Desarrolladora de software",skip:"Saltar a los enlaces",alt:"Memoji de Nadia",langs:"Idiomas: español, gallego, inglés, alemán, francés; aprendiendo sueco",role:"Desarrolladora de software · 2.º DAM · A Coruña",cvAria:"Ver CV (PDF)",projects:"Proyectos",p1:"Apuntes y repasos con IA",p2:"Freelance · 3 clientes reales",p3t:"Asesoría fiscal",p3:"Cliente real · en curso",p4t:"Yutori · Espacio creativo",p4:"Talleres creativos · en curso",avail:"Disponible para prácticas, junior y freelance"},
-    en:{title:"Nadia Lagoa Vilela · Software developer",skip:"Skip to links",alt:"Nadia's Memoji",langs:"Languages: Spanish, Galician, English, German, French; learning Swedish",role:"Software developer · 2nd-year DAM · A Coruña",cvAria:"View CV (PDF)",projects:"Projects",p1:"AI-powered notes and reviews",p2:"Freelance · 3 real clients",p3t:"Tax advisory",p3:"Real client · in progress",p4t:"Yutori · Creative space",p4:"Creative workshops · in progress",avail:"Open to internships, junior roles and freelance"}
+    es:{title:"Nadia Lagoa Vilela · Desarrolladora de software",skip:"Saltar a los enlaces",alt:"Memoji de Nadia",langs:"Idiomas: español, gallego, inglés, alemán, francés; aprendiendo sueco",role:"Desarrolladora de software · 2.º DAM · A Coruña",cvAria:"Ver CV (PDF)",projects:"Proyectos",p1:"Apuntes y repasos con IA",p2:"Freelance · webs para clientes reales",p3t:"Asesoría fiscal",p3:"Web en curso",clients:"Clientes de Lagoa",p4t:"Yutori · Espacio creativo",p4:"Talleres creativos · web en curso",avail:"Disponible para prácticas, junior y freelance"},
+    en:{title:"Nadia Lagoa Vilela · Software developer",skip:"Skip to links",alt:"Nadia's Memoji",langs:"Languages: Spanish, Galician, English, German, French; learning Swedish",role:"Software developer · 2nd-year DAM · A Coruña",cvAria:"View CV (PDF)",projects:"Projects",p1:"AI-powered notes and reviews",p2:"Freelance · websites for real clients",p3t:"Tax advisory",p3:"Website in progress",clients:"Lagoa clients",p4t:"Yutori · Creative space",p4:"Creative workshops · website in progress",avail:"Open to internships, junior roles and freelance"}
   };
   function set(l){
     var d=T[l];document.documentElement.lang=l;document.title=d.title;
