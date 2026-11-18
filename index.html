@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nadia Lagoa Vilela · Desarrolladora de software</title>
+<meta name="description" content="Desarrolladora de software · 2.º DAM · A Coruña. Contacto, LinkedIn, portfolio, CV y proyectos.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f6f3ee" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121110" media="(prefers-color-scheme: dark)">
+<meta property="og:title" content="Nadia Lagoa Vilela">
+<meta property="og:description" content="Desarrolladora de software · 2.º DAM · A Coruña">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23121110'/%3E%3Ctext x='50%25' y='58%25' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='30' fill='%23f6f3ee'%3ENL%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f3ee; --surface:#fffdf9; --text:#171615; --muted:#5c5852; --line:#e2ddd4;
+  --accent:#171615; --on-accent:#f6f3ee; --focus:#2f5bd3;
+  --serif:"Instrument Serif",Georgia,serif; --sans:"Inter Tight",system-ui,-apple-system,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#121110; --surface:#1c1b19; --text:#f2eee7; --muted:#aaa49a; --line:#2e2c29;
+         --accent:#f2eee7; --on-accent:#121110; --focus:#8fb0ff; }
+}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--text);font:16px/1.5 var(--sans);min-height:100dvh;
+  padding:max(20px,env(safe-area-inset-top)) 16px max(28px,env(safe-area-inset-bottom))}
+main{max-width:440px;margin:0 auto}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:12px}
+.skip{position:absolute;left:-999px}.skip:focus{left:16px;top:16px;background:var(--surface);padding:8px 12px}
+
+.top{display:flex;justify-content:flex-end;margin-bottom:8px}
+.lang{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:3px;gap:2px;background:var(--surface)}
+.lang button{font:500 12px/1 var(--mono);letter-spacing:.06em;color:var(--muted);background:none;border:0;
+  min-width:44px;min-height:36px;border-radius:999px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--accent);color:var(--on-accent)}
+
+header{text-align:center;padding:8px 0 24px}
+.avatar{width:104px;height:104px;border-radius:50%;margin:0 auto 16px;display:grid;place-items:center;
+  background:var(--accent);color:var(--on-accent);font:italic 44px/1 var(--serif);overflow:hidden;
+  box-shadow:0 0 0 4px var(--bg),0 0 0 5px var(--line)}
+.avatar img{width:100%;height:100%;object-fit:cover}
+h1{font:400 clamp(2.4rem,11vw,3rem)/1.02 var(--serif);letter-spacing:-.01em}
+.role{margin-top:8px;color:var(--muted);font-weight:500}
+.quote{margin:14px auto 0;max-width:30ch;font:italic 1.15rem/1.35 var(--serif);color:var(--muted)}
+.meta{margin-top:12px;font:400 11.5px/1.6 var(--mono);color:var(--muted);letter-spacing:.02em}
+
+.links{display:grid;gap:10px;list-style:none;padding:0}
+.btn{display:flex;align-items:center;gap:14px;min-height:60px;padding:0 18px;border-radius:16px;
+  background:var(--surface);border:1px solid var(--line);text-decoration:none;font-weight:500;font-size:1.05rem;
+  transition:transform .12s ease,border-color .12s ease}
+.btn:hover{border-color:var(--muted)}
+.btn:active{transform:scale(.985)}
+.btn svg{width:22px;height:22px;flex:none}
+.btn .arrow{margin-left:auto;width:16px;height:16px;opacity:.5}
+.btn.primary{background:var(--accent);color:var(--on-accent);border-color:var(--accent);min-height:64px}
+.btn small{display:block;font:400 11.5px/1.3 var(--mono);opacity:.7;margin-top:2px}
+
+h2{font:400 1.7rem/1.1 var(--serif);margin:36px 0 12px}
+.projects{display:grid;gap:10px;list-style:none;padding:0}
+.card{display:block;padding:16px 18px;border-radius:16px;border:1px solid var(--line);background:var(--surface);text-decoration:none}
+.card:hover{border-color:var(--muted)}
+.card h3{font:600 1.02rem/1.3 var(--sans);display:flex;justify-content:space-between;gap:8px}
+.card h3 span{font:400 11px/1.9 var(--mono);color:var(--muted);white-space:nowrap}
+.card p{color:var(--muted);font-size:.94rem;margin-top:4px}
+
+footer{margin-top:36px;text-align:center}
+.avail{display:inline-flex;align-items:center;gap:8px;font:500 .95rem/1.4 var(--sans);padding:10px 16px;
+  border-radius:999px;border:1px solid var(--line)}
+.dot{width:8px;height:8px;border-radius:50%;background:#2e9e5b;flex:none}
+.small{margin-top:14px;font:400 11px var(--mono);color:var(--muted)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#links" data-i18n="skip">Saltar a los enlaces</a>
+<main>
+  <div class="top">
+    <div class="lang" role="group" aria-label="Idioma / Language / Sprache">
+      <button type="button" data-lang="es" lang="es" aria-label="Español">ES</button>
+      <button type="button" data-lang="en" lang="en" aria-label="English">EN</button>
+      <button type="button" data-lang="de" lang="de" aria-label="Deutsch">DE</button>
+    </div>
+  </div>
+
+  <header>
+    <div class="avatar" id="avatar" aria-hidden="true">NL</div>
+    <h1>Nadia Lagoa Vilela</h1>
+    <p class="role" data-i18n="role">Desarrolladora de software · 2.º DAM · A Coruña</p>
+    <p class="quote" lang="en">“I've been translating between worlds my whole life. Code is just the newest one.”</p>
+    <p class="meta" data-i18n="langs">ES · GL · EN · DE · FR · aprendiendo SV</p>
+  </header>
+
+  <ul class="links" id="links">
+    <li><a class="btn primary" href="nadia-lagoa.vcf" download="Nadia-Lagoa-Vilela.vcf">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.6 3.4-5.5 6.5-5.5s5.7 1.9 6.5 5.5M19 8v6M16 11h6"/></svg>
+      <span><span data-i18n="save">Guardar contacto</span><small data-i18n="saveHint">Añádeme a tu agenda</small></span></a></li>
+    <li><a class="btn" href="https://www.linkedin.com/in/nadia-lagoa-vilela-a36a7b380/" rel="noopener" target="_blank">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4V21H3zM9.5 9.75h3.8v1.6h.06c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.6 4.77 6V21h-4v-5.1c0-1.22-.02-2.8-1.7-2.8-1.71 0-1.97 1.33-1.97 2.7V21h-4z"/></svg>
+      LinkedIn<svg class="arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 11l6-6M6 5h5v5"/></svg></a></li>
+    <li><a class="btn" href="https://nadia-lagoa.vercel.app" rel="noopener" target="_blank">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8h18M8 21h8"/></svg>
+      Portfolio<svg class="arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 11l6-6M6 5h5v5"/></svg></a></li>
+    <li><a class="btn" href="cv.pdf" download="CV-Nadia-Lagoa-Vilela.pdf">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8z"/><path d="M14 3v5h5M12 11v6M9 14l3 3 3-3"/></svg>
+      <span data-i18n="cv">Descargar CV</span><small class="arrow" style="width:auto;font:400 11px var(--mono)">PDF</small></a></li>
+    <li><a class="btn" href="https://github.com/lagoanadia" rel="noopener" target="_blank">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.1.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.91-1.3 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
+      GitHub<svg class="arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 11l6-6M6 5h5v5"/></svg></a></li>
+    <li><a class="btn" href="mailto:lagoanadia@gmail.com">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg>
+      <span>Email<small>lagoanadia@gmail.com</small></span></a></li>
+  </ul>
+
+  <section aria-labelledby="proj-title">
+    <h2 id="proj-title" data-i18n="projects">Proyectos destacados</h2>
+    <ul class="projects">
+      <li><a class="card" href="https://synapticnotes.app" rel="noopener" target="_blank">
+        <h3>Synaptic <span>synapticnotes.app ↗</span></h3>
+        <p data-i18n="p1">App con IA que ordena tus apuntes y te prepara repasos diarios.</p></a></li>
+      <li><a class="card" href="https://lagoa-webs.vercel.app" rel="noopener" target="_blank">
+        <h3>Lagoa · Estudio digital <span>freelance ↗</span></h3>
+        <p data-i18n="p2">Webs para clientes reales: un asesor fiscal, un taxista y un espacio creativo de talleres.</p></a></li>
+      <li><div class="card">
+        <h3>Prata <span data-i18n="soon">en desarrollo</span></h3>
+        <p data-i18n="p3">Tutor personal de idiomas centrado en la práctica antes que en la teoría.</p></div></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p class="avail"><span class="dot" aria-hidden="true"></span><span data-i18n="avail">Disponible para prácticas, puestos junior y proyectos freelance</span></p>
+    <p class="small">A Coruña · <span data-i18n="swiss">12 años en Suiza</span></p>
+  </footer>
+</main>
+<script>
+(function(){
+  var T={
+    es:{skip:"Saltar a los enlaces",role:"Desarrolladora de software · 2.º DAM · A Coruña",langs:"ES · GL · EN · DE · FR · aprendiendo SV",save:"Guardar contacto",saveHint:"Añádeme a tu agenda",cv:"Descargar CV",projects:"Proyectos destacados",p1:"App con IA que ordena tus apuntes y te prepara repasos diarios.",p2:"Webs para clientes reales: un asesor fiscal, un taxista y un espacio creativo de talleres.",p3:"Tutor personal de idiomas centrado en la práctica antes que en la teoría.",soon:"en desarrollo",avail:"Disponible para prácticas, puestos junior y proyectos freelance",swiss:"12 años en Suiza",title:"Nadia Lagoa Vilela · Desarrolladora de software"},
+    en:{skip:"Skip to links",role:"Software developer · 2nd-year DAM · A Coruña",langs:"ES · GL · EN · DE · FR · learning SV",save:"Save contact",saveHint:"Add me to your phone",cv:"Download CV",projects:"Featured projects",p1:"AI app that organises your notes and builds daily review sessions.",p2:"Websites for real clients: a tax advisor, a taxi driver and a creative workshop space.",p3:"Personal language tutor focused on practice over theory.",soon:"in progress",avail:"Open to internships, junior roles and freelance projects",swiss:"12 years in Switzerland",title:"Nadia Lagoa Vilela · Software developer"},
+    de:{skip:"Zu den Links springen",role:"Softwareentwicklerin · 2. Jahr DAM · A Coruña",langs:"ES · GL · EN · DE · FR · lerne SV",save:"Kontakt speichern",saveHint:"Zu deinen Kontakten hinzufügen",cv:"Lebenslauf herunterladen",projects:"Ausgewählte Projekte",p1:"KI-App, die deine Notizen ordnet und tägliche Wiederholungen vorbereitet.",p2:"Websites für echte Kunden: ein Steuerberater, ein Taxifahrer und ein kreativer Workshop-Raum.",p3:"Persönlicher Sprachtutor – Praxis vor Theorie.",soon:"in Entwicklung",avail:"Offen für Praktika, Junior-Stellen und Freelance-Projekte",swiss:"12 Jahre in der Schweiz",title:"Nadia Lagoa Vilela · Softwareentwicklerin"}
+  };
+  function set(l){
+    var d=T[l]; document.documentElement.lang=l; document.title=d.title;
+    document.querySelectorAll("[data-i18n]").forEach(function(e){var k=e.getAttribute("data-i18n");if(d[k])e.textContent=d[k];});
+    document.querySelectorAll("[data-lang]").forEach(function(b){b.setAttribute("aria-pressed",b.dataset.lang===l);});
+    try{localStorage.setItem("lang",l)}catch(e){}
+  }
+  var saved; try{saved=localStorage.getItem("lang")}catch(e){}
+  var nav=(navigator.languages||[navigator.language||"es"]).map(function(x){return x.slice(0,2).toLowerCase()});
+  var pick=saved&&T[saved]?saved:(nav.find(function(x){return T[x]})||(nav[0]==="gl"?"es":"en"));
+  set(pick);
+  document.querySelectorAll("[data-lang]").forEach(function(b){b.addEventListener("click",function(){set(b.dataset.lang)})});
+  // Foto opcional: si existe /foto.jpg sustituye a las iniciales
+  var img=new Image(); img.onload=function(){var a=document.getElementById("avatar");a.textContent="";img.alt="";a.appendChild(img)}; img.src="foto.jpg";
+})();
+</script>
+</body>
+</html>
