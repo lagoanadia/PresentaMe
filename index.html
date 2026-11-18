@@ -109,7 +109,7 @@ footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13.5px}
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.1.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.91-1.3 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg><span>GitHub</span></a>
       <a class="pill" href="https://nadia-lagoa.vercel.app" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 3 2.5 15 0 18M12 3c-2.5 3-2.5 15 0 18"/></svg><span>Portfolio</span></a>
-      <a class="pill" href="cv.pdf" target="_blank" rel="noopener" data-i18n-aria="cvAria" aria-label="Ver CV (PDF)">
+      <a class="pill" id="cv" href="cv.pdf" target="_blank" rel="noopener" data-i18n-aria="cvAria" aria-label="Ver CV (PDF)">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg><span>CV</span></a>
     </div>
     <a class="pill" href="mailto:lagoanadia@gmail.com">
@@ -142,14 +142,15 @@ footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13.5px}
 <script>
 (function(){
   var T={
-    es:{title:"Nadia Lagoa Vilela · Desarrolladora de software",skip:"Saltar a los enlaces",alt:"Memoji de Nadia",langs:"Idiomas: español, gallego, inglés, alemán, francés; aprendiendo sueco",role:"Desarrolladora de software · 2.º DAM · A Coruña",cvAria:"Ver CV (PDF)",projects:"Proyectos",p1:"Apuntes y repasos con IA",p2:"Freelance · webs para clientes reales",p3t:"Asesoría fiscal",p3:"Web en curso",clients:"Clientes de Lagoa",p4t:"Yutori · Espacio creativo",p4:"Talleres creativos · web en curso",avail:"Disponible para prácticas, junior y freelance"},
-    en:{title:"Nadia Lagoa Vilela · Software developer",skip:"Skip to links",alt:"Nadia's Memoji",langs:"Languages: Spanish, Galician, English, German, French; learning Swedish",role:"Software developer · 2nd-year DAM · A Coruña",cvAria:"View CV (PDF)",projects:"Projects",p1:"AI-powered notes and reviews",p2:"Freelance · websites for real clients",p3t:"Tax advisory",p3:"Website in progress",clients:"Lagoa clients",p4t:"Yutori · Creative space",p4:"Creative workshops · website in progress",avail:"Open to internships, junior roles and freelance"}
+    es:{title:"Nadia Lagoa Vilela · Desarrolladora de software",skip:"Saltar a los enlaces",alt:"Memoji de Nadia",langs:"Idiomas: español, gallego, inglés, alemán, francés; aprendiendo sueco",role:"Desarrolladora de software · 2.º DAM · A Coruña",cvAria:"Ver CV (PDF)",cv:"cv.pdf",projects:"Proyectos",p1:"Apuntes y repasos con IA",p2:"Freelance · webs para clientes reales",p3t:"Asesoría fiscal",p3:"Web en curso",clients:"Clientes de Lagoa",p4t:"Yutori · Espacio creativo",p4:"Talleres creativos · web en curso",avail:"Disponible para prácticas, junior y freelance"},
+    en:{title:"Nadia Lagoa Vilela · Software developer",skip:"Skip to links",alt:"Nadia's Memoji",langs:"Languages: Spanish, Galician, English, German, French; learning Swedish",role:"Software developer · 2nd-year DAM · A Coruña",cvAria:"View CV (PDF)",cv:"cv-en.pdf",projects:"Projects",p1:"AI-powered notes and reviews",p2:"Freelance · websites for real clients",p3t:"Tax advisory",p3:"Website in progress",clients:"Lagoa clients",p4t:"Yutori · Creative space",p4:"Creative workshops · website in progress",avail:"Open to internships, junior roles and freelance"}
   };
   function set(l){
     var d=T[l];document.documentElement.lang=l;document.title=d.title;
     document.querySelectorAll("[data-i18n]").forEach(function(e){var k=e.dataset.i18n;if(d[k])e.textContent=d[k]});
     document.querySelectorAll("[data-i18n-alt]").forEach(function(e){e.alt=d[e.dataset.i18nAlt]});
     document.querySelectorAll("[data-i18n-aria]").forEach(function(e){e.setAttribute("aria-label",d[e.dataset.i18nAria])});
+    document.getElementById("cv").href=d.cv;
     document.querySelectorAll("[data-lang]").forEach(function(b){b.setAttribute("aria-pressed",b.dataset.lang===l)});
     try{localStorage.setItem("lang",l)}catch(e){}
   }
