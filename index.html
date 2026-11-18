@@ -31,9 +31,10 @@ a{color:inherit;text-decoration:none}
 svg{width:19px;height:19px;flex:none}
 
 .bar{display:flex;justify-content:flex-end}
-.seg{display:flex;background:var(--seg);border-radius:9px;padding:2px;font-weight:600;font-size:12px}
-.seg button{font:inherit;color:var(--muted);background:none;border:0;min-width:44px;min-height:30px;border-radius:7px;cursor:pointer}
-.seg button[aria-pressed="true"]{background:var(--seg-on);color:var(--text);box-shadow:0 1px 2px rgba(0,0,0,.12)}
+.seg{display:flex;gap:2px;font-size:13px;font-weight:500;margin-right:-10px}
+.seg button{font:inherit;letter-spacing:.02em;color:var(--muted);opacity:.7;background:none;border:0;min-width:40px;min-height:40px;cursor:pointer;position:relative;transition:color .15s,opacity .15s}
+.seg button[aria-pressed="true"]{color:var(--text);opacity:1;font-weight:600}
+.seg button[aria-pressed="true"]::after{content:"";position:absolute;left:50%;bottom:7px;width:4px;height:4px;margin-left:-2px;border-radius:50%;background:currentColor}
 
 header{text-align:center}
 .memoji{width:200px;margin:8px auto 0}
@@ -42,7 +43,7 @@ h1{font:700 28px/1.15 -apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe U
 .role{color:var(--muted);margin-top:4px;font-size:15px}
 .flags{display:flex;gap:10px;justify-content:center;margin-top:12px;list-style:none;font-size:20px;line-height:1}
 .flags li{display:flex;align-items:center}
-.flags svg{width:22px;height:15px;border-radius:2px;box-shadow:0 0 0 .5px rgba(0,0,0,.15)}
+.flags svg{width:1.1em;height:1.1em}
 .flags .learn{opacity:.4}
 
 .links{margin-top:26px;display:grid;gap:8px}
@@ -82,7 +83,7 @@ footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13.5px}
     <p class="role" data-i18n="role">Desarrolladora de software · 2.º DAM · A Coruña</p>
     <ul class="flags" aria-label="Idiomas: español, gallego, inglés, alemán, francés; aprendiendo sueco" data-i18n-aria="langs">
       <li title="Español" aria-hidden="true">🇪🇸</li>
-      <li title="Galego" aria-hidden="true"><svg viewBox="0 0 22 15"><rect width="22" height="15" fill="#fff"/><path d="M0 0L22 15" stroke="#0099cc" stroke-width="3.2"/></svg></li>
+      <li title="Galego" aria-hidden="true"><svg viewBox="0 0 36 36"><defs><clipPath id="gl"><rect x="1" y="7" width="34" height="22" rx="3.5"/></clipPath><linearGradient id="glw" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".35"/><stop offset=".5" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".08"/></linearGradient></defs><g clip-path="url(#gl)"><rect x="1" y="7" width="34" height="22" fill="#f5f6f8"/><path d="M-2 5L38 31" stroke="#5fa8dc" stroke-width="7"/><rect x="1" y="7" width="34" height="22" fill="url(#glw)"/></g><rect x="1.25" y="7.25" width="33.5" height="21.5" rx="3.3" fill="none" stroke="#000" stroke-opacity=".12" stroke-width=".5"/></svg></li>
       <li title="English" aria-hidden="true">🇬🇧</li>
       <li title="Deutsch" aria-hidden="true">🇩🇪</li>
       <li title="Français" aria-hidden="true">🇫🇷</li>
