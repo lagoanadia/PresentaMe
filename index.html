@@ -70,10 +70,9 @@ footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13.5px}
 <a class="skip" href="#links" data-i18n="skip">Saltar a los enlaces</a>
 <main>
   <div class="bar">
-    <div class="seg" role="group" aria-label="Idioma / Language / Sprache">
+    <div class="seg" role="group" aria-label="Idioma / Language">
       <button type="button" data-lang="es" lang="es" aria-label="Español">ES</button>
       <button type="button" data-lang="en" lang="en" aria-label="English">EN</button>
-      <button type="button" data-lang="de" lang="de" aria-label="Deutsch">DE</button>
     </div>
   </div>
 
@@ -127,8 +126,7 @@ footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13.5px}
 (function(){
   var T={
     es:{title:"Nadia Lagoa Vilela · Desarrolladora de software",skip:"Saltar a los enlaces",alt:"Memoji de Nadia",langs:"Idiomas: español, gallego, inglés, alemán, francés; aprendiendo sueco",role:"Desarrolladora de software · 2.º DAM · A Coruña",cvAria:"Ver CV (PDF)",projects:"Proyectos",p1:"Apuntes y repasos con IA",p2:"Freelance · 3 clientes reales",p3t:"Asesoría fiscal",p3:"Cliente real · en curso",avail:"Disponible para prácticas, junior y freelance"},
-    en:{title:"Nadia Lagoa Vilela · Software developer",skip:"Skip to links",alt:"Nadia's Memoji",langs:"Languages: Spanish, Galician, English, German, French; learning Swedish",role:"Software developer · 2nd-year DAM · A Coruña",cvAria:"View CV (PDF)",projects:"Projects",p1:"AI-powered notes and reviews",p2:"Freelance · 3 real clients",p3t:"Tax advisory",p3:"Real client · in progress",avail:"Open to internships, junior roles and freelance"},
-    de:{title:"Nadia Lagoa Vilela · Softwareentwicklerin",skip:"Zu den Links springen",alt:"Memoji von Nadia",langs:"Sprachen: Spanisch, Galicisch, Englisch, Deutsch, Französisch; lerne Schwedisch",role:"Softwareentwicklerin · 2. Jahr DAM · A Coruña",cvAria:"Lebenslauf ansehen (PDF)",projects:"Projekte",p1:"Notizen und Wiederholung mit KI",p2:"Freelance · 3 echte Kunden",p3t:"Steuerberatung",p3:"Echter Kunde · in Arbeit",avail:"Offen für Praktika, Junior-Stellen und Freelance"}
+    en:{title:"Nadia Lagoa Vilela · Software developer",skip:"Skip to links",alt:"Nadia's Memoji",langs:"Languages: Spanish, Galician, English, German, French; learning Swedish",role:"Software developer · 2nd-year DAM · A Coruña",cvAria:"View CV (PDF)",projects:"Projects",p1:"AI-powered notes and reviews",p2:"Freelance · 3 real clients",p3t:"Tax advisory",p3:"Real client · in progress",avail:"Open to internships, junior roles and freelance"}
   };
   function set(l){
     var d=T[l];document.documentElement.lang=l;document.title=d.title;
