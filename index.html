@@ -41,9 +41,9 @@ header{text-align:center}
 .memoji img{display:block;width:100%;height:auto;-webkit-mask:linear-gradient(#000 80%,transparent);mask:linear-gradient(#000 80%,transparent)}
 h1{font:700 28px/1.15 -apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Roboto,sans-serif;letter-spacing:-.025em;margin-top:4px}
 .role{color:var(--muted);margin-top:4px;font-size:15px}
-.flags{display:flex;gap:10px;justify-content:center;margin-top:12px;list-style:none;font-size:20px;line-height:1}
+.flags{display:flex;gap:8px;justify-content:center;margin-top:12px;list-style:none;line-height:0}
 .flags li{display:flex;align-items:center}
-.flags svg{width:1.1em;height:1.1em}
+.flags svg{width:28px;height:28px}
 .flags .learn{opacity:.4}
 
 .links{margin-top:26px;display:grid;gap:8px}
@@ -91,12 +91,13 @@ footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13.5px}
     <h1>Nadia Lagoa Vilela</h1>
     <p class="role" data-i18n="role">Desarrolladora de software · 2.º DAM · A Coruña</p>
     <ul class="flags" aria-label="Idiomas: español, gallego, inglés, alemán, francés; aprendiendo sueco" data-i18n-aria="langs">
-      <li title="Español" aria-hidden="true">🇪🇸</li>
-      <li title="Galego" aria-hidden="true"><svg viewBox="0 0 36 36"><defs><clipPath id="gl"><rect x="1" y="7" width="34" height="22" rx="3.5"/></clipPath><linearGradient id="glw" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".35"/><stop offset=".5" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".08"/></linearGradient></defs><g clip-path="url(#gl)"><rect x="1" y="7" width="34" height="22" fill="#f5f6f8"/><path d="M-2 5L38 31" stroke="#5fa8dc" stroke-width="7"/><rect x="1" y="7" width="34" height="22" fill="url(#glw)"/></g><rect x="1.25" y="7.25" width="33.5" height="21.5" rx="3.3" fill="none" stroke="#000" stroke-opacity=".12" stroke-width=".5"/></svg></li>
-      <li title="English" aria-hidden="true">🇬🇧</li>
-      <li title="Deutsch" aria-hidden="true">🇩🇪</li>
-      <li title="Français" aria-hidden="true">🇫🇷</li>
-      <li class="learn" title="Svenska" aria-hidden="true">🇸🇪</li>
+      <li hidden><svg width="0" height="0"><defs><linearGradient id="gloss" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".3"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".08"/></linearGradient></defs></svg></li>
+      <li title="Español" aria-hidden="true"><svg viewBox="0 0 36 36"><defs><clipPath id="ces"><rect x="1" y="7" width="34" height="22" rx="3.5"/></clipPath></defs><g clip-path="url(#ces)"><rect x="1" y="7" width="34" height="22" fill="#c60b1e"/><rect x="1" y="12.5" width="34" height="11" fill="#ffc400"/><rect x="1" y="7" width="34" height="22" fill="url(#gloss)"/></g><rect x="1.25" y="7.25" width="33.5" height="21.5" rx="3.3" fill="none" stroke="#000" stroke-opacity=".12" stroke-width=".5"/></svg></li>
+      <li title="Galego" aria-hidden="true"><svg viewBox="0 0 36 36"><defs><clipPath id="cgl"><rect x="1" y="7" width="34" height="22" rx="3.5"/></clipPath></defs><g clip-path="url(#cgl)"><rect x="1" y="7" width="34" height="22" fill="#f5f6f8"/><path d="M-2 5L38 31" stroke="#5fa8dc" stroke-width="7"/><rect x="1" y="7" width="34" height="22" fill="url(#gloss)"/></g><rect x="1.25" y="7.25" width="33.5" height="21.5" rx="3.3" fill="none" stroke="#000" stroke-opacity=".12" stroke-width=".5"/></svg></li>
+      <li title="English" aria-hidden="true"><svg viewBox="0 0 36 36"><defs><clipPath id="cgb"><rect x="1" y="7" width="34" height="22" rx="3.5"/></clipPath></defs><g clip-path="url(#cgb)"><rect x="1" y="7" width="34" height="22" fill="#012169"/><path d="M1 7L35 29M35 7L1 29" stroke="#fff" stroke-width="4.4"/><path d="M1 7L35 29M35 7L1 29" stroke="#c8102e" stroke-width="1.5"/><path d="M18 7v22M1 18h34" stroke="#fff" stroke-width="7"/><path d="M18 7v22M1 18h34" stroke="#c8102e" stroke-width="4"/><rect x="1" y="7" width="34" height="22" fill="url(#gloss)"/></g><rect x="1.25" y="7.25" width="33.5" height="21.5" rx="3.3" fill="none" stroke="#000" stroke-opacity=".12" stroke-width=".5"/></svg></li>
+      <li title="Deutsch" aria-hidden="true"><svg viewBox="0 0 36 36"><defs><clipPath id="cde"><rect x="1" y="7" width="34" height="22" rx="3.5"/></clipPath></defs><g clip-path="url(#cde)"><rect x="1" y="7" width="34" height="7.4" fill="#000"/><rect x="1" y="14.4" width="34" height="7.3" fill="#dd0000"/><rect x="1" y="21.7" width="34" height="7.3" fill="#ffce00"/><rect x="1" y="7" width="34" height="22" fill="url(#gloss)"/></g><rect x="1.25" y="7.25" width="33.5" height="21.5" rx="3.3" fill="none" stroke="#000" stroke-opacity=".12" stroke-width=".5"/></svg></li>
+      <li title="Français" aria-hidden="true"><svg viewBox="0 0 36 36"><defs><clipPath id="cfr"><rect x="1" y="7" width="34" height="22" rx="3.5"/></clipPath></defs><g clip-path="url(#cfr)"><rect x="1" y="7" width="11.4" height="22" fill="#002395"/><rect x="12.4" y="7" width="11.3" height="22" fill="#fff"/><rect x="23.7" y="7" width="11.3" height="22" fill="#ed2939"/><rect x="1" y="7" width="34" height="22" fill="url(#gloss)"/></g><rect x="1.25" y="7.25" width="33.5" height="21.5" rx="3.3" fill="none" stroke="#000" stroke-opacity=".12" stroke-width=".5"/></svg></li>
+      <li class="learn" title="Svenska" aria-hidden="true"><svg viewBox="0 0 36 36"><defs><clipPath id="cse"><rect x="1" y="7" width="34" height="22" rx="3.5"/></clipPath></defs><g clip-path="url(#cse)"><rect x="1" y="7" width="34" height="22" fill="#006aa7"/><path d="M14 7v22M1 18h34" stroke="#fecc00" stroke-width="4.4"/><rect x="1" y="7" width="34" height="22" fill="url(#gloss)"/></g><rect x="1.25" y="7.25" width="33.5" height="21.5" rx="3.3" fill="none" stroke="#000" stroke-opacity=".12" stroke-width=".5"/></svg></li>
     </ul>
   </header>
 
