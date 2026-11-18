@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:'Archivo',sans-serif;color:#1a1818;-webkit-font-smoothing:antialiased}
+a{color:#e8541e;text-decoration:none}
+a:hover{color:#b83d10}
+doc-page:not(:defined){visibility:hidden}
+</style>
+<script src="./doc-page.js"></script>
+<script src="./image-slot.js"></script>
+</helmet>
+<doc-page size="a4">
+<section class="page" data-screen-label="01 CV">
+<div style="position:relative;height:100%;overflow:hidden;background:#f6f3f0;font-size:10.5px;line-height:1.45">
+<div style="position:absolute;right:-150px;top:-170px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,#ff7a3d 0%,#ffa877 35%,rgba(255,190,150,0) 70%);filter:blur(30px);opacity:.85"></div>
+<div style="position:absolute;left:-190px;bottom:-210px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,#ff8a4c 0%,#ffbf99 40%,rgba(255,210,180,0) 70%);filter:blur(36px);opacity:.6"></div>
+
+<div style="position:relative;height:100%;box-sizing:border-box;padding:26px 34px 22px;display:flex;flex-direction:column;gap:14px">
+
+<header style="display:grid;grid-template-columns:88px 1fr;gap:20px;align-items:center">
+<div style="width:88px;height:88px;border-radius:50%;box-shadow:0 0 0 3px #f6f3f0,0 0 0 4px #e8541e">
+<image-slot id="foto-nadia" shape="circle" placeholder="Foto" style="width:88px;height:88px"></image-slot>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px">
+<h1 style="margin:0;font-weight:800;font-size:40px;line-height:.9;letter-spacing:-.035em;text-transform:uppercase">Nadia<br>Lagoa Vilela</h1>
+<div style="font-size:13px;font-weight:500">Desarrolladora <span style="color:#e8541e">Full-Stack</span> junior · Estudiante de DAM</div>
+</div>
+</header>
+<div style="display:flex;flex-wrap:wrap;gap:4px 18px;font-family:'JetBrains Mono',monospace;font-size:9.4px;color:#1a1818;padding:8px 0 12px;margin-top:-8px;border-top:1px solid #1a1818;border-bottom:1px solid #e2dbd4"><span>+34 613 597 453</span><span>lagoanadia@gmail.com</span><span>A Coruña, España</span><span>nadia-lagoa.vercel.app</span><span>github.com/lagoanadia</span><span>linkedin.com/in/nadia-lagoa-vilela-a36a7b380</span></div>
+
+<div style="display:flex;flex-direction:column;gap:5px">
+<h2 style="margin:0;font-size:22px;font-weight:300;letter-spacing:.14em;text-transform:uppercase;color:#bdb3aa;line-height:1">Sobre mí</h2>
+<p style="margin:0;font-size:12.2px;line-height:1.42;color:#2e2a28;text-wrap:pretty">Desarrollo apps web, de escritorio y de datos con <strong style="font-weight:600;color:#1a1818">IA integrada</strong>. Soy autodidacta: he construido una base sólida en POO, bases de datos y Git, y el trato con clientes me ha enseñado a resolver incidencias bajo presión. Me apasiona seguir aprendiendo e investigando sobre IA y tecnología, y esa misma curiosidad me lleva a leer en varios idiomas, a aprender otros nuevos y a interesarme por la filosofía, la biología y la actualidad.</p>
+</div>
+
+<div style="display:grid;grid-template-columns:minmax(0,1fr) 200px;gap:22px;flex:1">
+
+<div style="display:flex;flex-direction:column;gap:14px">
+
+<div style="display:flex;flex-direction:column;gap:6px">
+<h2 style="margin:0 0 2px;font-size:22px;font-weight:300;letter-spacing:.14em;text-transform:uppercase;color:#bdb3aa;line-height:1">Experiencia</h2>
+<div style="display:grid;grid-template-columns:30px 1fr;gap:8px;padding:4px 0;border-top:1px solid #e2dbd4">
+<span style="width:8px;height:8px;border-radius:50%;background:#e8541e;margin-top:6px"></span>
+<div style="display:flex;flex-direction:column;gap:3px">
+<div style="display:flex;justify-content:space-between;gap:10px;align-items:baseline;flex-wrap:wrap"><span style="font-size:14px;font-weight:600;letter-spacing:-.01em">Automatización y Digitalización de tareas y procesos de negocios <span style="font-weight:400;color:#6d6560">· Lagoa Webs (Autónoma)</span></span><span style="font-family:'JetBrains Mono',monospace;font-size:9.4px;color:#e8541e;white-space:nowrap">09/2026 – Actualidad</span></div>
+<div style="font-size:11.6px;line-height:1.36;color:#2e2a28;text-wrap:pretty">Webs y automatización para negocios: centralizo sus procesos, les ahorro tiempo y mejoro su captación de clientes. Clientes reales: un taxista, un asesor fiscal y un espacio de talleres creativos. lagoa-webs.vercel.app</div>
+<div style="font-family:'JetBrains Mono',monospace;font-size:10.4px;color:#c4450f">Astro · Cloudflare · Odoo · Automatización</div>
+</div>
+</div>
+<div style="display:grid;grid-template-columns:30px 1fr;gap:8px;padding:4px 0;border-top:1px solid #e2dbd4;border-bottom:1px solid #e2dbd4">
+<span style="width:8px;height:8px;border-radius:50%;border:1.5px solid #e8541e;box-sizing:border-box;margin-top:5px"></span>
+<div style="display:flex;flex-direction:column;gap:2px">
+<div style="display:flex;justify-content:space-between;gap:10px;align-items:baseline;flex-wrap:wrap"><span style="font-size:12px;font-weight:600">Camarera y Ayudante de cocina <span style="font-weight:400;color:#6d6560">· Hostelería, A Coruña y Muxía</span></span><span style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#e8541e;white-space:nowrap">09/2024 – 05/2026</span></div>
+<div style="font-size:10.5px;color:#4a4440">Atención al cliente, resolución de incidencias y trabajo en equipo bajo presión.</div>
+</div>
+</div>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:4px">
+<h2 style="margin:0 0 4px;font-size:22px;font-weight:300;letter-spacing:.14em;text-transform:uppercase;color:#bdb3aa;line-height:1">Proyectos</h2>
+
+<div style="display:grid;grid-template-columns:30px 1fr;gap:8px;padding:4px 0;border-top:1px solid #e2dbd4">
+<span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#e8541e;padding-top:4px">01</span>
+<div style="display:flex;flex-direction:column;gap:4px">
+<div style="font-size:18px;font-weight:600;letter-spacing:-.015em">Synaptic <span style="font-weight:400;color:#6d6560;font-size:13px">Notas ordenadas con IA · <a href="https://synapticnotes.app">synapticnotes.app</a></span> <span style="font-family:'JetBrains Mono',monospace;font-size:8.6px;font-weight:500;color:#fff;background:#e8541e;padding:2px 7px;border-radius:20px;vertical-align:3px;letter-spacing:.04em">EN CRECIMIENTO</span></div>
+<div style="font-size:11.6px;line-height:1.36;color:#2e2a28;text-wrap:pretty">Estructura notas en markdown con Groq, GitHub OAuth, imágenes y PostgreSQL.</div>
+<div style="font-size:11.6px;line-height:1.36;color:#1a1818;font-weight:500">Usada por usuarios reales y empezando a generar ingresos por suscripción.</div>
+<div style="font-family:'JetBrains Mono',monospace;font-size:10.4px;color:#c4450f">Next.js · TypeScript · Prisma · PostgreSQL · GitHub OAuth · Groq · Vercel</div>
+</div>
+</div>
+
+<div style="display:grid;grid-template-columns:30px 1fr;gap:8px;padding:4px 0;border-top:1px solid #e2dbd4">
+<span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#e8541e;padding-top:4px">02</span>
+<div style="display:flex;flex-direction:column;gap:4px">
+<div style="font-size:18px;font-weight:600;letter-spacing:-.015em">Radar Reforesta <span style="font-weight:400;color:#6d6560;font-size:13px">Hackathon 1hack A Coruña</span> <span style="font-family:'JetBrains Mono',monospace;font-size:8.6px;font-weight:500;color:#fff;background:#e8541e;padding:2px 7px;border-radius:20px;vertical-align:3px;letter-spacing:.04em">2.º PUESTO</span></div>
+<div style="font-size:11.6px;line-height:1.36;color:#2e2a28;text-wrap:pretty">Radar de ayudas para la ONG Reforesta, con una compañera. Backend en Python con GitHub Actions: lee la BDNS y el BOE y evalúa cada convocatoria con Groq.</div>
+<div style="font-family:'JetBrains Mono',monospace;font-size:10.4px;color:#c4450f">Python · GitHub Actions · Groq · Cloudflare Workers · D1</div>
+</div>
+</div>
+
+<div style="display:grid;grid-template-columns:30px 1fr;gap:8px;padding:4px 0;border-top:1px solid #e2dbd4">
+<span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#e8541e;padding-top:4px">03</span>
+<div style="display:flex;flex-direction:column;gap:4px">
+<div style="font-size:18px;font-weight:600;letter-spacing:-.015em">Cadence <span style="font-weight:400;color:#6d6560;font-size:13px">App de crecimiento personal (PWA)</span></div>
+<div style="font-size:11.6px;line-height:1.36;color:#2e2a28;text-wrap:pretty">App mobile-first con agenda, rutinas, gastos, lectura y salud. Server Actions, validación con Zod, Auth.js (Google y GitHub OAuth), asistente con IA (Groq) y tests con Vitest.</div>
+<div style="font-family:'JetBrains Mono',monospace;font-size:10.4px;color:#c4450f">Next.js · TypeScript · Prisma · PostgreSQL · Tailwind · Zod · Vitest</div>
+</div>
+</div>
+
+<div style="display:grid;grid-template-columns:30px 1fr;gap:8px;padding:4px 0;border-top:1px solid #e2dbd4">
+<span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#e8541e;padding-top:4px">04</span>
+<div style="display:flex;flex-direction:column;gap:4px">
+<div style="font-size:18px;font-weight:600;letter-spacing:-.015em">Kooky <span style="font-weight:400;color:#6d6560;font-size:13px">App de recetas</span></div>
+<div style="font-size:11.6px;line-height:1.36;color:#2e2a28;text-wrap:pretty">React + TypeScript y backend REST con Node.js y Express. APIs de Spoonacular y Groq.</div>
+<div style="font-family:'JetBrains Mono',monospace;font-size:10.4px;color:#c4450f">React · TypeScript · Node.js · Express · API REST · Vercel</div>
+</div>
+</div>
+
+<div style="display:grid;grid-template-columns:30px 1fr;gap:8px;padding:4px 0;border-top:1px solid #e2dbd4;border-bottom:1px solid #e2dbd4">
+<span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#e8541e;padding-top:4px">05</span>
+<div style="display:flex;flex-direction:column;gap:4px">
+<div style="font-size:18px;font-weight:600;letter-spacing:-.015em">Prata <span style="font-weight:400;color:#6d6560;font-size:13px">Tutor de idiomas con IA</span></div>
+
+<div style="display:flex;flex-direction:column;gap:3px;padding-left:12px;border-left:2px solid #f3c6b2">
+<div style="font-size:13.5px;font-weight:600;letter-spacing:-.01em">Prata Desktop + Tracker <span style="font-weight:400;color:#6d6560;font-size:11.6px">Escritorio y datos</span></div>
+<div style="font-size:11.6px;line-height:1.36;color:#2e2a28;text-wrap:pretty">Chat con IA local (Ollama) en CustomTkinter y análisis de estudio con pandas.</div>
+<div style="font-family:'JetBrains Mono',monospace;font-size:10.4px;color:#c4450f">Python · CustomTkinter · Ollama · pandas · matplotlib</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:3px;padding-left:12px;border-left:2px solid #f3c6b2">
+<div style="font-size:13.5px;font-weight:600;letter-spacing:-.01em">Prata Web <span style="font-weight:400;color:#6d6560;font-size:11.6px">Tutor de sueco con IA</span> <span style="font-family:'JetBrains Mono',monospace;font-size:8px;font-weight:500;color:#e8541e;border:1px solid #e8541e;padding:1px 6px;border-radius:20px;vertical-align:2px;letter-spacing:.04em">EN PROCESO</span></div>
+<div style="font-size:11.6px;line-height:1.36;color:#2e2a28;text-wrap:pretty">Chat con corrección en tiempo real vía Groq, vocabulario y quiz.</div>
+<div style="font-family:'JetBrains Mono',monospace;font-size:10.4px;color:#c4450f">React · React Native · TypeScript · Groq API</div>
+</div>
+</div>
+</div>
+
+</div>
+
+
+</div>
+
+<aside style="display:flex;flex-direction:column;gap:14px;padding-left:18px;border-left:1px solid #e2dbd4;font-size:11.8px;line-height:1.4">
+
+<div style="display:flex;flex-direction:column;gap:7px">
+<h2 style="margin:0 0 2px;font-size:22px;font-weight:300;letter-spacing:.14em;text-transform:uppercase;color:#bdb3aa;line-height:1">Stack</h2>
+<div><div style="font-family:'JetBrains Mono',monospace;font-size:9.6px;color:#e8541e;text-transform:uppercase;letter-spacing:.06em">Lenguajes</div><div>Java, JavaScript, TypeScript, Python, SQL</div></div>
+<div><div style="font-family:'JetBrains Mono',monospace;font-size:9.6px;color:#e8541e;text-transform:uppercase;letter-spacing:.06em">Frontend</div><div>React, React Native, Next.js, Vite</div></div>
+<div><div style="font-family:'JetBrains Mono',monospace;font-size:9.6px;color:#e8541e;text-transform:uppercase;letter-spacing:.06em">Backend</div><div>Node.js, Express, Python, API REST, Prisma, OAuth, Cloudflare Workers</div></div>
+<div><div style="font-family:'JetBrains Mono',monospace;font-size:9.6px;color:#e8541e;text-transform:uppercase;letter-spacing:.06em">Datos</div><div>PostgreSQL, SQLite, pandas, matplotlib</div></div>
+<div><div style="font-family:'JetBrains Mono',monospace;font-size:9.6px;color:#e8541e;text-transform:uppercase;letter-spacing:.06em">Herramientas</div><div>Git, GitHub Actions, Bash, Jupyter, Ollama, Odoo</div></div>
+<div><div style="font-family:'JetBrains Mono',monospace;font-size:9.6px;color:#e8541e;text-transform:uppercase;letter-spacing:.06em">Metodologías</div><div>Ágiles: Scrum, Kanban</div></div>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:7px">
+<h2 style="margin:0 0 3px;font-size:22px;font-weight:300;letter-spacing:.14em;text-transform:uppercase;color:#bdb3aa;line-height:1">Idiomas</h2>
+<div style="display:grid;grid-template-columns:62px 1fr 34px;gap:8px;align-items:center"><span>Español</span><span style="height:5px;border-radius:3px;background:#e8541e"></span><span style="font-family:'JetBrains Mono',monospace;font-size:9.6px;color:#6d6560">Nativo</span></div>
+<div style="display:grid;grid-template-columns:62px 1fr 34px;gap:8px;align-items:center"><span>Gallego</span><span style="height:5px;border-radius:3px;background:#e8541e"></span><span style="font-family:'JetBrains Mono',monospace;font-size:9.6px;color:#6d6560">Nativo</span></div>
+<div style="display:grid;grid-template-columns:62px 1fr 34px;gap:8px;align-items:center"><span>Inglés</span><span style="height:5px;border-radius:3px;background:#e8541e"></span><span style="font-family:'JetBrains Mono',monospace;font-size:9.6px;color:#6d6560">Nativo</span></div>
+<div style="display:grid;grid-template-columns:62px 1fr 34px;gap:8px;align-items:center"><span>Alemán</span><span style="height:5px;border-radius:3px;background:#e8541e"></span><span style="font-family:'JetBrains Mono',monospace;font-size:9.6px;color:#6d6560">Nativo</span></div>
+<div style="display:grid;grid-template-columns:62px 1fr 34px;gap:8px;align-items:center"><span>Francés</span><span style="height:5px;border-radius:3px;background:linear-gradient(90deg,#e8541e 66%,#e2dbd4 66%)"></span><span style="font-family:'JetBrains Mono',monospace;font-size:9.6px;color:#6d6560">B2</span></div>
+<div style="display:grid;grid-template-columns:62px 1fr 34px;gap:8px;align-items:center"><span>Sueco</span><span style="height:5px;border-radius:3px;background:linear-gradient(90deg,#e8541e 16%,#e2dbd4 16%)"></span><span style="font-family:'JetBrains Mono',monospace;font-size:9.6px;color:#6d6560">A1</span></div>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:8px">
+<h2 style="margin:0 0 2px;font-size:22px;font-weight:300;letter-spacing:.14em;text-transform:uppercase;color:#bdb3aa;line-height:1">Educación</h2>
+<div><div style="font-family:'JetBrains Mono',monospace;font-size:9.6px;color:#e8541e">2025 – 2027</div><div style="font-weight:600;font-size:13px;line-height:1.3">CFGS DAM</div><div style="color:#6d6560">CHIOS Formación, A Coruña</div></div>
+<div><div style="font-family:'JetBrains Mono',monospace;font-size:9.6px;color:#e8541e">2020 – 2024</div><div style="font-weight:600;font-size:13px;line-height:1.3">Bachillerato en Biología y Química</div><div style="color:#6d6560">Kantonsschule Sargans, Suiza</div></div>
+</div>
+
+</aside>
+</div>
+</div>
+</div>
+</section>
+</doc-page>
+</x-dc>
+</body>
+</html>
